@@ -46,9 +46,9 @@
       <!-- location -->
       <section class="grid grid-cols-12 justify-between lg:hidden py-3">
         <div class="col-span-6"></div>
-        <div class="col-span-6 flex flex-row justify-center gap-2">
-          <img src="images/Location.svg" alt="" />
-          <p>Lution Street, N4G-00....</p>
+        <div class="col-span-6 flex flex-row justify-center items-center gap-2">
+          <img src="images/Location.svg" alt="" class="w-5 h-5" />
+          <p class="text-[12px]">Lution Street, N4G-00....</p>
         </div>
       </section>
       <!-- Mobile Menu section end -->
@@ -146,16 +146,20 @@
           class="m-4 lg:m-0 w-full rounded-xl lg:rounded-none bg-black lg:bg-BannerBg text-white lg:text-black lg:w-6/12 flex flex-col justify-center gap-8 py-8 px-4 lg:p-6"
         >
           <div>
-            <p class="font-normal">
+            <p class="font-normal text-[12px] lg:text-base">
               Order Restaurant food, takeaway and groceries.
             </p>
-            <h3 class="font-semibold text-5xl">
+            <h3
+              class="font-semibold text-3xl lg:text-5xl text-center lg:text-left"
+            >
               Feast Your Senses, <br />
               <span class="text-Orange">Fast and Fresh</span>
             </h3>
           </div>
           <div class="flex flex-col gap-2">
-            <p>Enter a postcode to see what we deliver</p>
+            <p class="text-center lg:text-left text-[12px] lg:text-base">
+              Enter a postcode to see what we deliver
+            </p>
             <div
               class="w-full lg:w-8/12 rounded-3xl bg-white border-BorderColor/20 border-[1px] flex justify-between"
             >
@@ -233,11 +237,11 @@
       <!-- exclusive deals section -->
       <section>
         <!-- nav section -->
-        <nav class="flex justify-between items-center my-10 px-6">
-          <h3 class="font-bold text-3xl">
+        <nav class="flex justify-between items-center my-10 px-1 lg:px-6">
+          <h3 class="font-bold text-[11px] lg:text-3xl">
             Up to -40% 🎊 Order.uk exclusive deals
           </h3>
-          <div class="flex items-center justify-between gap-10">
+          <div class="hidden lg:flex items-center justify-between gap-10">
             <a href="#" class="font-medium"> Vegan </a>
             <a href="#" class="font-medium"> Sushi </a>
             <a
@@ -247,108 +251,205 @@
             </a>
             <a href="#" class="font-medium"> others </a>
           </div>
+          <!-- mobile menu -->
+          <div
+            class="flex flex-row justify-center items-center gap-1 lg:gap-2 border-[1px] border-black rounded-full px-1 py-1 lg:hidden"
+          >
+            <img src="images/RightArrow.svg" alt="" class="w-4 h-4" />
+            <p class="text-[9px]">Pizza & Fast Food</p>
+          </div>
         </nav>
         <!-- menu section -->
-        <section class="grid grid-cols-12 gap-4 mb-10">
+        <section class="grid grid-cols-12 gap-1 lg:gap-4 mb-10 p-1 lg:p-0">
           <!-- menu-1 -->
-          <div class="col-span-4 relative">
+          <div class="col-span-4 flex flex-col gap-2 relative">
             <figure><img src="images/ExclusiveDeals1.svg" alt="" /></figure>
-            <div class="absolute left-10 bottom-8">
-              <p class="text-Orange font-medium text-xl">Restaurant</p>
-              <h3 class="text-white font-bold text-2xl">Chef Burgers London</h3>
+            <div class="lg:absolute left-10 bottom-8">
+              <p class="text-Orange font-medium text-[13px] lg:text-xl">
+                Restaurant
+              </p>
+              <h3
+                class="text-black lg:text-white font-bold text-sm lg:text-2xl"
+              >
+                Chef Burgers London
+              </h3>
             </div>
             <div
-              class="bg-black rounded-br-lg rounded-bl-lg w-20 p-3 absolute top-0 right-7"
+              class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
             >
-              <p class="font-bold text-xl text-white text-center">-40%</p>
+              <p
+                class="font-bold text-[12px] lg:text-xl text-white text-center"
+              >
+                -40%
+              </p>
             </div>
           </div>
           <!-- menu-2 -->
-          <div class="col-span-4 relative">
+          <div class="col-span-4 flex flex-col gap-2 relative">
             <figure><img src="images/ExclusiveDeals2.svg" alt="" /></figure>
-            <div class="absolute left-10 bottom-8">
-              <p class="text-Orange font-medium text-xl">Restaurant</p>
-              <h3 class="text-white font-bold text-2xl">
+            <div class="lg:absolute left-10 bottom-8">
+              <p class="text-Orange font-medium text-[13px] lg:text-xl">
+                Restaurant
+              </p>
+              <h3
+                class="text-black lg:text-white font-bold text-sm lg:text-2xl"
+              >
                 Grand Ai Cafe London
               </h3>
             </div>
             <div
-              class="bg-black rounded-br-lg rounded-bl-lg w-20 p-3 absolute top-0 right-7"
+              class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
             >
-              <p class="font-bold text-xl text-white text-center">-40%</p>
+              <p
+                class="font-bold text-[12px] lg:text-xl text-white text-center"
+              >
+                -40%
+              </p>
             </div>
           </div>
           <!-- menu-3 -->
-          <div class="col-span-4 relative">
+          <div class="col-span-4 flex flex-col gap-2 relative">
             <figure><img src="images/ExclusiveDeals3.svg" alt="" /></figure>
-            <div class="absolute left-10 bottom-8">
-              <p class="text-Orange font-medium text-xl">Restaurant</p>
-              <h3 class="text-white font-bold text-2xl">
+            <div class="lg:absolute left-10 bottom-8">
+              <p class="text-Orange font-medium text-[13px] lg:text-xl">
+                Restaurant
+              </p>
+              <h3
+                class="text-black lg:text-white font-bold text-sm lg:text-2xl"
+              >
                 Butterbrot Caf’e London
               </h3>
             </div>
             <div
-              class="bg-black rounded-br-lg rounded-bl-lg w-20 p-3 absolute top-0 right-7"
+              class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
             >
-              <p class="font-bold text-xl text-white text-center">-40%</p>
+              <p
+                class="font-bold text-[12px] lg:text-xl text-white text-center"
+              >
+                -40%
+              </p>
             </div>
           </div>
         </section>
       </section>
       <!-- Popular category section -->
-      <section>
+      <section
+        class="bg-FooterColor/50 lg:bg-white p-1 lg:p-0 rounded-xl lg:rounded-none"
+      >
         <!-- heading -->
-        <div class="my-10 px-6">
-          <h3 class="font-bold text-3xl">Order.uk Popular Categories 🤩</h3>
+        <div class="my-4 lg:my-10 px-6">
+          <h3 class="font-bold text-base lg:text-3xl">
+            Order.uk Popular Categories 🤩
+          </h3>
         </div>
         <!-- category -->
-        <section class="grid grid-cols-12 gap-3 mb-10">
+        <section class="grid grid-cols-12 gap-3 mb-10 p-1 lg:p-0">
           <!-- item-1 -->
-          <div class="col-span-2 rounded-xl">
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
             <figure><img src="images/PopularCategory1.svg" alt="" /></figure>
-            <div class="bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl">
-              <h3 class="font-bold">Burgers & Fast food</h3>
-              <p class="text-sm text-Orange font-normal">21 Restaurants</p>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Burgers
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                21 Restaurants
+              </p>
             </div>
           </div>
           <!-- item-2 -->
-          <div class="col-span-2 rounded-xl">
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
             <figure><img src="images/PopularCategory2.svg" alt="" /></figure>
-            <div class="bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl">
-              <h3 class="font-bold">Salads</h3>
-              <p class="text-sm text-Orange font-normal">32 Restaurants</p>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Salads
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                32 Restaurants
+              </p>
             </div>
           </div>
           <!-- item-3 -->
-          <div class="col-span-2 rounded-xl">
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
             <figure><img src="images/PopularCategory3.svg" alt="" /></figure>
-            <div class="bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl">
-              <h3 class="font-bold">Pasta & Casuals</h3>
-              <p class="text-sm text-Orange font-normal">4 Restaurants</p>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Pasta & Casuals
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                4 Restaurants
+              </p>
             </div>
           </div>
           <!-- item-4 -->
-          <div class="col-span-2 rounded-xl">
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
             <figure><img src="images/PopularCategory4.svg" alt="" /></figure>
-            <div class="bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl">
-              <h3 class="font-bold">Pizza</h3>
-              <p class="text-sm text-Orange font-normal">32 Restaurants</p>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Pizza
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                32 Restaurants
+              </p>
             </div>
           </div>
           <!-- item-5 -->
-          <div class="col-span-2 rounded-xl">
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
             <figure><img src="images/PopularCategory5.svg" alt="" /></figure>
-            <div class="bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl">
-              <h3 class="font-bold">Breakfast</h3>
-              <p class="text-sm text-Orange font-normal">4 Restaurants</p>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Breakfast
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                4 Restaurants
+              </p>
             </div>
           </div>
           <!-- item-6 -->
-          <div class="col-span-2 rounded-xl">
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
             <figure><img src="images/PopularCategory6.svg" alt="" /></figure>
-            <div class="bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl">
-              <h3 class="font-bold">Soups</h3>
-              <p class="text-sm text-Orange font-normal">32 Restaurants</p>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Soups
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                32 Restaurants
+              </p>
             </div>
           </div>
         </section>
@@ -356,11 +457,11 @@
       <!-- Popular Restaurants section -->
       <section>
         <!-- heading -->
-        <div class="my-10 px-6">
-          <h3 class="font-bold text-3xl">Popular Restaurants</h3>
+        <div class="my-4 lg:my-10 px-2 lg:px-6">
+          <h3 class="font-bold text-base lg:text-3xl">Popular Restaurants</h3>
         </div>
         <!-- restaurant name -->
-        <section class="grid grid-cols-12 gap-3 mb-10">
+        <section class="grid grid-cols-12 gap-1 lg:gap-3 mb-10 p-1 lg:p-0">
           <!-- item-1 -->
           <div class="col-span-2 rounded-xl">
             <figure><img src="images/McDonald’s London.svg" alt="" /></figure>
@@ -389,26 +490,34 @@
       </section>
 
       <!-- Apps section -->
-      <section class="my-10 relative">
+      <section class="flex flex-col gap-3 lg:block my-10 relative">
         <div
           class="grid grid-cols-12 rounded-xl bg-gradient-to-r from-lightGradient1 to-lightGradient2"
         >
-          <div class="col-span-4"></div>
+          <div class="hidden lg:block col-span-4"></div>
           <!-- right section -->
           <div
-            class="col-span-8 flex flex-col justify-center items-center gap-6 py-24"
+            class="col-span-full lg:col-span-8 flex flex-col justify-center items-center gap-6 py-0 lg:py-24"
           >
-            <div class="flex flex-row justify-center items-center">
-              <figure><img src="images/LOGO 1.svg" alt="" /></figure>
-              <h2 class="text-7xl font-bold">ing is more</h2>
+            <div class="lg:flex lg:flex-row lg:justify-center lg:items-center">
+              <figure class="hidden lg:block">
+                <img src="images/LOGO 1.svg" alt="" />
+              </figure>
+              <h2 class="w-full text-3xl lg:text-7xl font-bold">
+                <span class="text-3xl lg:hidden font-bold">Order</span>ing is
+                more
+              </h2>
             </div>
             <div
-              class="bg-black rounded-full py-2 pl-44 pr-8 flex flex-row items-center justify-center gap-3"
+              class="bg-lightGradient1 lg:bg-black rounded-full py-2 pl-0 lg:pl-44 pr-0 lg:pr-8 flex flex-row items-center justify-center gap-3"
             >
-              <p class="text-Orange text-6xl font-medium underline">
+              <p class="text-Orange text-2xl lg:text-6xl font-medium underline">
                 Personalised
               </p>
-              <span class="text-white text-6xl font-medium">& Instant</span>
+              <span
+                class="text-black lg:text-white text-2xl lg:text-6xl font-medium"
+                >& Instant</span
+              >
             </div>
             <h4 class="text-2xl font-normal">
               Download the Order.uk app for faster ordering
@@ -420,7 +529,7 @@
           </div>
         </div>
         <!-- image section -->
-        <figure class="absolute -bottom-16 left-4">
+        <figure class="lg:absolute lg:-bottom-16 lg:left-4">
           <img
             src="images/BannerImageForApp.svg"
             alt=""
