@@ -21,9 +21,13 @@
     <header class="max-w-7xl mx-auto">
       <!-- Mobile Menu section start -->
       <!-- top -->
-      <section class="flex justify-between lg:hidden">
-        <figure><img src="images/LOGO 1.svg" alt="" /></figure>
-        <figure class="border-r-[1px] border-r-FooterColor">
+      <section class="flex justify-between lg:hidden p-4">
+        <figure class="flex justify-center items-center w-40 h-10">
+          <img src="images/LOGO 1.svg" alt="" />
+        </figure>
+        <figure
+          class="flex justify-center items-center border-l-2 border-l-FooterColor p-1 w-14 h-14"
+        >
           <img src="images/HambergerMenu.svg" alt="" />
         </figure>
       </section>
@@ -116,13 +120,33 @@
         <div class="flex items-center justify-between gap-10">
           <a
             href="#"
-            class="bg-Orange rounded-3xl px-7 py-2 text-white font-medium"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
             >Home</a
           >
-          <a href="#" class="font-medium"> Browse Menu </a>
-          <a href="#" class="font-medium"> Special Offers </a>
-          <a href="#" class="font-medium"> Restaurants </a>
-          <a href="#" class="font-medium"> Track Order </a>
+          <a
+            href="#"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+          >
+            Browse Menu
+          </a>
+          <a
+            href="#"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+          >
+            Special Offers
+          </a>
+          <a
+            href="resturantDetails.html"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+          >
+            Restaurants
+          </a>
+          <a
+            href="#"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+          >
+            Track Order
+          </a>
           <a
             href="#"
             class="bg-FooterBottomColor rounded-3xl px-6 py-3 text-white font-medium flex flex-row gap-3"
@@ -490,26 +514,26 @@
       </section>
 
       <!-- Apps section -->
-      <section class="flex flex-col gap-3 lg:block my-10 relative">
-        <div
-          class="grid grid-cols-12 rounded-xl bg-gradient-to-r from-lightGradient1 to-lightGradient2"
-        >
+      <section
+        class="flex flex-col gap-3 lg:block bg-FooterMainColor rounded-xl lg:bg-white my-10 relative pt-4 px-4 lg:p-0 mx-2 lg:mx-0"
+      >
+        <div class="grid grid-cols-12 rounded-xl bg-FooterMainColor">
           <div class="hidden lg:block col-span-4"></div>
           <!-- right section -->
           <div
-            class="col-span-full lg:col-span-8 flex flex-col justify-center items-center gap-6 py-0 lg:py-24"
+            class="col-span-full lg:col-span-8 flex flex-col justify-center items-center gap-4 lg:gap-6 py-0 lg:py-24"
           >
             <div class="lg:flex lg:flex-row lg:justify-center lg:items-center">
               <figure class="hidden lg:block">
                 <img src="images/LOGO 1.svg" alt="" />
               </figure>
               <h2 class="w-full text-3xl lg:text-7xl font-bold">
-                <span class="text-3xl lg:hidden font-bold">Order</span>ing is
+                <span class="text-3xl lg:hidden font-bold">Order </span>ing is
                 more
               </h2>
             </div>
             <div
-              class="bg-lightGradient1 lg:bg-black rounded-full py-2 pl-0 lg:pl-44 pr-0 lg:pr-8 flex flex-row items-center justify-center gap-3"
+              class="bg-FooterMainColor lg:bg-black rounded-full py-2 pl-0 lg:pl-44 pr-0 lg:pr-8 flex flex-row items-center justify-center gap-3"
             >
               <p class="text-Orange text-2xl lg:text-6xl font-medium underline">
                 Personalised
@@ -519,7 +543,7 @@
                 >& Instant</span
               >
             </div>
-            <h4 class="text-2xl font-normal">
+            <h4 class="text-[13px] lg:text-2xl font-normal">
               Download the Order.uk app for faster ordering
             </h4>
             <div class="flex">
@@ -533,34 +557,38 @@
           <img
             src="images/BannerImageForApp.svg"
             alt=""
-            class="w-[600px] h-[600px]"
+            class="w-[3000px] h-[300px] lg:w-[600px] lg:h-[600px]"
           />
         </figure>
       </section>
 
       <!-- Partner and Ride section -->
-      <section class="my-10 grid grid-cols-12 gap-8">
+      <section
+        class="my-10 grid grid-cols-1 lg:grid-cols-12 gap-8 mx-2 lg:mx-0"
+      >
         <!-- Partner -->
         <div class="col-span-6 relative">
           <figure><img src="images/PartnerImage.svg" alt="" /></figure>
-          <div class="absolute left-10 bottom-8 flex flex-col gap-6">
+          <div class="absolute left-10 bottom-8 flex flex-col gap-1 lg:gap-6">
             <div>
-              <p class="text-Orange font-medium text-xl">
+              <p class="text-Orange font-medium text-sm lg:text-xl">
                 Signup as a business
               </p>
-              <h3 class="font-bold text-white text-2xl">Partner with us</h3>
+              <h3 class="font-bold text-white text-base lg:text-2xl">
+                Partner with us
+              </h3>
             </div>
             <button
-              class="bg-Orange font-medium text-white rounded-3xl py-3 px-8"
+              class="w-3/4 lg:w-full bg-Orange font-medium text-white rounded-3xl py-1 px-1 lg:py-3 lg:px-8 text-[11px] lg:text-base"
             >
               Get Started
             </button>
           </div>
 
           <div
-            class="bg-white rounded-br-lg rounded-bl-lg p-3 absolute top-0 left-10"
+            class="bg-white rounded-br-lg rounded-bl-lg p-2 lg:p-3 absolute top-0 left-10"
           >
-            <p class="font-bold text-xl text-center">
+            <p class="font-bold text-[10px] lg:text-xl text-center">
               Earn more with lower fees
             </p>
           </div>
@@ -568,33 +596,43 @@
         <!-- Rider -->
         <div class="col-span-6 relative">
           <figure><img src="images/RiderImage.svg" alt="" /></figure>
-          <div class="absolute left-10 bottom-8 flex flex-col gap-6">
+          <div class="absolute left-10 bottom-8 flex flex-col gap-1 lg:gap-6">
             <div>
-              <p class="text-Orange font-medium text-xl">Signup as a rider</p>
-              <h3 class="font-bold text-white text-2xl">Ride with us</h3>
+              <p class="text-Orange font-medium text-sm lg:text-xl">
+                Signup as a rider
+              </p>
+              <h3 class="font-bold text-white text-base lg:text-2xl">
+                Ride with us
+              </h3>
             </div>
             <button
-              class="bg-Orange font-medium text-white rounded-3xl py-3 px-8"
+              class="w-3/4 lg:w-full bg-Orange font-medium text-white rounded-3xl py-1 px-1 lg:py-3 lg:px-8 text-[11px] lg:text-base"
             >
               Get Started
             </button>
           </div>
 
           <div
-            class="bg-white rounded-br-lg rounded-bl-lg p-3 absolute top-0 left-10"
+            class="bg-white rounded-br-lg rounded-bl-lg p-2 lg:p-3 absolute top-0 left-10"
           >
-            <p class="font-bold text-xl text-center">Avail exclusive perks</p>
+            <p class="font-bold text-[10px] lg:text-xl text-center">
+              Avail exclusive perks
+            </p>
           </div>
         </div>
       </section>
       <!-- Know more about us! -->
-      <section class="bg-FooterColor my-10 py-20 rounded-xl">
+      <section
+        class="bg-white lg:bg-FooterColor my-10 py-4 lg:py-20 rounded-xl"
+      >
         <!-- questions nav section -->
         <nav
-          class="max-w-6xl mx-auto flex justify-between items-center pt-20 pb-10 px-6"
+          class="max-w-6xl mx-auto flex justify-center lg:justify-between items-center p-2 lg:pt-20 lg:pb-10 lg:px-6"
         >
-          <h3 class="font-bold text-3xl">Know more about us!</h3>
-          <div class="flex items-center justify-between gap-10">
+          <h3 class="font-bold text-center text-xl lg:text-3xl">
+            Know more about us!
+          </h3>
+          <div class="hidden lg:flex items-center justify-between gap-10">
             <a
               href="#"
               class="border-[1px] hover:border-Orange rounded-3xl px-2 py-2 text-black hover:font-bold"
@@ -622,37 +660,39 @@
         </nav>
         <!-- How it works section -->
         <div
-          class="max-w-6xl mx-auto grid grid-cols-12 gap-6 justify-center items-center bg-white px-6 py-8 rounded-xl"
+          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 justify-center items-center bg-white px-1 lg:px-6 py-8 rounded-xl"
         >
-          <div class="col-span-4 flex flex-col">
+          <div class="col-span-full lg:col-span-4 flex flex-col">
             <a
-              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center"
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
             >
               How does Order.UK work?
             </a>
             <a
-              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center"
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
             >
               What payment methods are accepted?
             </a>
             <a
-              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center"
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
             >
               Can I track my order in real-time?
             </a>
             <a
-              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center"
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
             >
               Are there any special discounts orpromotions available?
             </a>
             <a
-              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center"
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
             >
               Is Order.UK available in my area?
             </a>
           </div>
-          <div class="col-span-8 flex flex-col gap-7">
-            <div class="grid grid-cols-12 gap-3">
+          <div
+            class="col-span-full lg:col-span-8 flex flex-col gap-7 mx-2 lg:mx-0 bg-black lg:bg-white p-8 lg:p-0 rounded-xl lg:rounded-none"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
               <!-- place an order -->
               <div
                 class="col-span-4 bg-FooterColor flex flex-col justify-center items-center gap-2 rounded-xl p-4"
@@ -685,7 +725,7 @@
               </div>
             </div>
             <div>
-              <p class="text-center">
+              <p class="text-center text-white lg:text-black">
                 Order.UK simplifies the food ordering process. Browse through
                 our diverse menu, <br />
                 select your favorite dishes, and proceed to checkout. Your
@@ -697,28 +737,30 @@
         </div>
       </section>
       <!-- Statics section -->
-      <section class="bg-Orange rounded-xl p-6 my-10">
-        <div class="grid grid-cols-12">
+      <section class="bg-Orange rounded-xl p-6 my-10 mx-4 lg:mx-0">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0">
           <!-- Registered Riders -->
           <div
-            class="col-span-3 border-r-[1px] border-FooterColor flex flex-col justify-center items-center"
+            class="col-span-3 lg:border-r-[1px] border-b-[1px] lg:border-b-0 pb-8 lg:pb-0 border-FooterColor flex flex-col justify-center items-center"
           >
             <h1 class="text-6xl font-light text-white">546+</h1>
             <p class="text-2xl font-bold text-white">Registered Riders</p>
           </div>
           <!-- Orders Delivered -->
           <div
-            class="col-span-3 border-r-[1px] border-FooterColor flex flex-col justify-center items-center"
+            class="col-span-3 border-b-[1px] lg:border-b-0 lg:border-r-[1px] pb-8 lg:pb-0 border-FooterColor flex flex-col justify-center items-center"
           >
             <h1 class="text-6xl font-light text-white">789,900+</h1>
             <p class="text-2xl font-bold text-white">Orders Delivered</p>
           </div>
           <!-- Restaurants Partnered-->
           <div
-            class="col-span-3 border-r-[1px] border-FooterColor flex flex-col justify-center items-center"
+            class="col-span-3 lg:border-r-[1px] border-b-[1px] lg:border-b-0 pb-8 lg:pb-0 border-FooterColor flex flex-col justify-center items-center"
           >
             <h1 class="text-6xl font-light text-white">690+</h1>
-            <p class="text-2xl font-bold text-white">Restaurants Partnered</p>
+            <p class="text-[23px] lg:text-2xl font-bold text-white">
+              Restaurants Partnered
+            </p>
           </div>
           <!-- Food items-->
           <div class="col-span-3 flex flex-col justify-center items-center">
@@ -730,21 +772,29 @@
     </main>
     <!-- footer section -->
     <footer class="bg-FooterMainColor">
-      <section class="max-w-7xl mx-auto grid grid-cols-12 gap-10 py-20">
+      <section
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 px-4 lg:px-0 py-20"
+      >
         <!-- play store app store -->
-        <div class="col-span-4 flex flex-col gap-5">
+        <div
+          class="col-span-full lg:col-span-4 flex flex-col justify-center lg:justify-normal items-center lg:items-start gap-5"
+        >
           <figure><img src="images/LOGO 2.svg" alt="" /></figure>
           <div class="flex flex-row">
-            <img src="images/AppStore.svg" alt="" />
-            <img src="images/PlayStore.svg" alt="" />
+            <figure><img src="images/AppStore.svg" alt="" /></figure>
+            <figure><img src="images/PlayStore.svg" alt="" /></figure>
           </div>
-          <p class="font-normal">
+          <p class="font-normal lg:text-left text-center">
             Company # 490039-445, Registered withHouse of companies.
           </p>
         </div>
         <!-- inbox field -->
-        <div class="col-span-4 flex flex-col gap-5">
-          <h1 class="text-xl font-bold">Get Exclusive Deals in your Inbox</h1>
+        <div
+          class="col-span-full lg:col-span-4 flex flex-col justify-center items-center lg:justify-normal lg:items-start gap-5"
+        >
+          <h1 class="text-base lg:text-xl font-bold">
+            Get Exclusive Deals in your Inbox
+          </h1>
           <div class="rounded-3xl bg-FooterColor flex justify-between">
             <input
               type="text"
@@ -768,7 +818,7 @@
           </div>
         </div>
         <!-- Legal Pages -->
-        <div class="col-span-2 flex flex-col gap-5">
+        <div class="col-span-full lg:col-span-2 flex flex-col gap-5">
           <h1 class="text-xl font-bold">Legal Pages</h1>
           <a href="#" class="underline">Terms and conditions</a>
           <a href="#" class="underline">Privacy</a>
@@ -776,7 +826,7 @@
           <a href="#" class="underline">Modern Slavery Statement</a>
         </div>
         <!-- Important Links -->
-        <div class="col-span-2 flex flex-col gap-5">
+        <div class="col-span-full lg:col-span-2 flex flex-col gap-5">
           <h1 class="text-xl font-bold">Important Links</h1>
           <a href="#" class="underline">Get help</a>
           <a href="#" class="underline">Add your restaurant</a>
@@ -789,10 +839,12 @@
     <section class="bg-FooterBottomColor">
       <!-- nav section -->
       <nav
-        class="max-w-7xl mx-auto flex justify-between items-center text-white py-7"
+        class="max-w-7xl mx-auto flex justify-center lg:justify-between items-center text-white py-7"
       >
-        <h3 class="">Order.uk Copyright 2024, All Rights Reserved.</h3>
-        <div class="flex items-center justify-between gap-10">
+        <h3 class="text-sm lg:text-base">
+          Order.uk Copyright 2024, All Rights Reserved.
+        </h3>
+        <div class="hidden lg:flex items-center justify-between gap-10">
           <a href="#" class=""> Privacy Policy </a>
           <a href="#" class=""> Terms </a>
 

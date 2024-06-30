@@ -22,8 +22,9 @@ module.exports = {
       FooterMainColor: '#E8E8E8',
       FooterBottomColor: '#03081F',
       PopCatBg: '#f5f5f5',
+      BannerResBg: '#f4f4f4',
+      OfferBg: '#f3f3f3',
     },   
-  
   },
   },
   plugins: [],
