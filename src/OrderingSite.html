@@ -161,12 +161,15 @@
     </header>
     <!-- main-1 -->
     <main class="max-w-7xl mx-auto">
-      <!-- banner section hidden -->
+      <!-- banner section  -->
       <section
-        class="h-[400px] rounded-xl bg-no-repeat bg-cover bg-center relative hidden"
+        class="h-[400px] rounded-xl bg-no-repeat bg-cover bg-center relative"
         style="background-image: url(images/BannerImageBurger.svg)"
       >
-        <div class="grid grid-cols-12 gap-4">
+        <div
+          class="absolute bg-BannerResBg/90 inset-x-0 inset-y-0 z-10 rounded-xl"
+        ></div>
+        <div class="absolute inset-x-0 inset-y-0 grid grid-cols-12 gap-4 z-20">
           <!-- left section -->
           <div class="col-span-6 flex flex-col justify-center gap-5 px-10">
             <p class="text-xl">
@@ -192,52 +195,8 @@
           </div>
           <!-- right section -->
           <div class="col-span-6 flex justify-center items-center relative">
-            <figure class="rounded-xl px-16 pt-10">
-              <img src="images/BannerImageOrder.svg" alt="" />
-            </figure>
-            <figure class="absolute bottom-0 -left-2">
-              <img src="images/Reviews.svg" alt="" />
-            </figure>
-          </div>
-        </div>
-        <div>
-          <figure><img src="images/ClockIcon.svg" alt="" /></figure>
-        </div>
-      </section>
-      <!-- banner section  -->
-      <section
-        class="h-[400px] rounded-xl bg-no-repeat bg-cover bg-center relative"
-        style="background-image: url(images/BannerImageBurger.svg)"
-      >
-        <div
-          class="absolute bg-BannerResBg/90 inset-x-0 inset-y-0 z-10 rounded-xl"
-        ></div>
-        <div class="absolute inset-x-0 inset-y-0 grid grid-cols-12 gap-4 z-20">
-          <!-- left section -->
-          <div class="col-span-6 flex flex-col justify-center gap-3 px-10">
-            <p class="text-xl">Food Delivery</p>
-            <h1 class="text-6xl font-semibold">McDonald’s East London</h1>
-            <div class="flex flex-row gap-3">
-              <div
-                class="bg-black rounded-full flex flex-row justify-center items-center gap-2 p-2"
-              >
-                <figure><img src="images/MenuFoodIcon.svg" alt="" /></figure>
-                <p class="font-semibold text-white">Minimum Order: 12 GBP</p>
-              </div>
-              <div
-                class="bg-black rounded-full flex flex-row justify-center items-center gap-2 p-2"
-              >
-                <figure><img src="images/MortorCycleIcon.svg" alt="" /></figure>
-                <p class="font-semibold text-white">
-                  Delivery in 20-25 Minutes
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- right section -->
-          <div class="col-span-6 flex justify-center items-center relative">
             <figure class="rounded-xl px-16 pt-10 relative">
-              <img src="images/BannerImageBurger.svg" alt="" />
+              <img src="images/BannerImageOrder.svg" alt="" />
               <figure class="absolute bottom-0 -left-2">
                 <img src="images/Reviews.svg" alt="" />
               </figure>
@@ -251,11 +210,9 @@
           <p class="font-semibold text-base text-white">Open until 3:00 AM</p>
         </div>
       </section>
-      <!-- All Offers from McDonald’s East London section  -->
+      <!-- Order from Tandoori Pizza London  -->
       <section class="max-w-6xl mx-auto flex flex-row justify-between my-14">
-        <h1 class="font-bold text-3xl">
-          All Offers from McDonald’s East London
-        </h1>
+        <h1 class="font-bold text-3xl">Order from Tandoori Pizza London</h1>
         <div
           class="border-[1px] border-black flex flex-row gap-2 px-4 py-2 rounded-full"
         >
@@ -267,68 +224,326 @@
           />
         </div>
       </section>
+      <!-- Menu Item and Cart section -->
+      <section class="grid grid-cols-12 gap-3 my-20">
+        <!-- menu section -->
+        <aside class="col-span-3">
+          <!-- menuType section -->
+          <div
+            class="bg-BannerBg border-[1px] border-BorderColorI py-8 rounded-xl flex flex-col gap-4 my-6"
+          >
+            <div class="flex flex-row items-center gap-4 pl-6">
+              <figure><img src="images/RestaurantMenu.svg" alt="" /></figure>
+              <p class="font-semibold text-3xl">Menu</p>
+            </div>
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Pizzas</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Garlic Bread</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Calzone</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Kebabas</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Salads</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Cold drinks</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Happy Meal®</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Desserts</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Hot drinks</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Sauces</a
+            >
+            <a
+              href="#"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              >Orbit®</a
+            >
+          </div>
+          <!-- First Order Discount -->
+          <div class="col-span-4 flex flex-col gap-2 relative rounded-xl">
+            <figure class="">
+              <img src="images/FirstOrder.svg" alt="" />
+            </figure>
+            <div class="lg:absolute left-10 bottom-8">
+              <p class="text-Orange font-medium text-[13px] lg:text-base">
+                McDonald’s East London
+              </p>
+              <h3 class="text-black lg:text-white font-bold text-sm lg:text-xl">
+                First Order Discount
+              </h3>
+            </div>
+            <!-- discount -->
+            <div
+              class="bg-black rounded-br-lg rounded-bl-lg w-10 h-10 lg:w-16 lg:h-16 p-1 lg:p-3 absolute top-0 left-7"
+            >
+              <p
+                class="font-bold text-[12px] lg:text-xl text-white text-center"
+              >
+                -20%
+              </p>
+            </div>
+            <!-- plus -->
+            <div
+              class="bg-white opacity-90 rounded-tl-[45px] w-20 p-2 absolute bottom-0 right-0 flex justify-center items-center"
+            >
+              <figure>
+                <img src="images/Plus.svg" alt="" class="w-8 h-8" />
+              </figure>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Items section -->
+        <main class="col-span-6 flex flex-col gap-2">
+          <!-- Pizza shorting -->
+          <div class="flex flex-row items-center justify-between py-4 px-6">
+            <h1 class="text-3xl font-semibold">Pizzas</h1>
+            <div
+              class="bg-border-[1px] bg-BannerBgI border-BorderColorII flex flex-row gap-2 pl-6 pr-4 py-3 rounded-full"
+            >
+              <input
+                type="text"
+                class="outline-none bg-BannerBgI"
+                placeholder="Sort by Pricing"
+              />
+              <figure>
+                <img src="images/RightDownArrow.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+          <!-- Pizza menu -->
+          <!-- item-1 -->
+          <div
+            class="bg-BannerBgII border-[1px] border-BorderColor/10 rounded-lg"
+          >
+            <!-- Top part -->
+            <div class="flex flex-row justify-between pt-6 px-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold text-2xl">Farm House Xtreme Pizza</p>
+                <figure><img src="images/ReviewChilli1.svg" alt="" /></figure>
+                <p>
+                  1 McChicken™, 1 Big Mac™, 1 Royal <br />
+                  Cheeseburger, 3 medium sized French Fries , <br />
+                  3 cold drinks
+                </p>
+              </div>
+              <figure><img src="images/Pizza1.svg" alt="" /></figure>
+            </div>
+            <!-- Bottom part -->
+            <div class="grid grid-cols-12 pt-4 pb-5 px-6">
+              <div class="col-span-10 grid grid-cols-12 gap-x-2 gap-y-3">
+                <!-- small -->
+                <div
+                  class="col-span-4 bg-black border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-white">Small</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£21.90</p>
+                  </div>
+                </div>
+                <!-- Medium -->
+                <div
+                  class="col-span-4 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">Medium</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£25.90</p>
+                  </div>
+                </div>
+                <!-- Large -->
+                <div
+                  class="col-span-4 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">Large</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£27.90</p>
+                  </div>
+                </div>
+                <!-- XL Large with Sauces -->
+                <div
+                  class="col-span-6 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">
+                    XL Large with Sauces
+                  </p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£27.90</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item-2 -->
+          <div
+            class="bg-BannerBgII border-[1px] border-BorderColor/10 rounded-lg"
+          >
+            <!-- Top part -->
+            <div class="flex flex-row justify-between pt-4 px-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold text-2xl">Deluxe Pizza</p>
+                <figure><img src="images/ReviewChilli2.svg" alt="" /></figure>
+                <p>
+                  1 McChicken™, 1 Big Mac™, 1 Royal <br />
+                  Cheeseburger, 3 medium sized French Fries , <br />
+                  3 cold drinks
+                </p>
+              </div>
+              <figure class="relative">
+                <img src="images/Pizza2.svg" alt="" />
+                <figure class="absolute -top-2 -left-2">
+                  <img src="images/Pizza2Icon.svg" alt="" />
+                </figure>
+              </figure>
+            </div>
+            <!-- Bottom part -->
+            <div class="grid grid-cols-12 pt-4 pb-5 px-6">
+              <div class="col-span-10 grid grid-cols-12 gap-x-2 gap-y-3">
+                <!-- small -->
+                <div
+                  class="col-span-4 bg-black border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-white">Small</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£21.90</p>
+                  </div>
+                </div>
+                <!-- Medium -->
+                <div
+                  class="col-span-4 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">Medium</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£25.90</p>
+                  </div>
+                </div>
+                <!-- Large -->
+                <div
+                  class="col-span-4 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">Large</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£27.90</p>
+                  </div>
+                </div>
+                <!-- XL Large with Sauces -->
+                <div
+                  class="col-span-6 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">
+                    XL Large with Sauces
+                  </p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£27.90</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item-3 -->
+          <div
+            class="bg-BannerBgII border-[1px] border-BorderColor/10 rounded-lg"
+          >
+            <!-- Top part -->
+            <div class="flex flex-row justify-between pt-6 px-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold text-2xl">Tandoori Pizza</p>
+                <figure><img src="images/ReviewChilli3.svg" alt="" /></figure>
+                <p>
+                  1 McChicken™, 1 Big Mac™, 1 Royal <br />
+                  Cheeseburger, 3 medium sized French Fries , <br />
+                  3 cold drinks
+                </p>
+              </div>
+              <figure class="relative">
+                <img src="images/Pizza3.svg" alt="" />
+                <figure class="absolute -top-2 -left-2">
+                  <img src="images/Pizza2Icon.svg" alt="" />
+                </figure>
+              </figure>
+            </div>
+            <!-- Bottom part -->
+            <div class="grid grid-cols-12 pt-4 pb-3 px-6">
+              <div class="col-span-10 grid grid-cols-12 gap-x-2 gap-y-3">
+                <!-- small -->
+                <div
+                  class="col-span-4 bg-black border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-white">Small</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£21.90</p>
+                  </div>
+                </div>
+                <!-- Medium -->
+                <div
+                  class="col-span-4 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">Medium</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£25.90</p>
+                  </div>
+                </div>
+                <!-- Large -->
+                <div
+                  class="col-span-4 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">Large</p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£27.90</p>
+                  </div>
+                </div>
+                <!-- XL Large with Sauces -->
+                <div
+                  class="col-span-6 bg-white border-[1px] rounded-md border-BorderColorIII flex flex-row justify-around items-center py-2"
+                >
+                  <p class="font-bold text-sm text-black">
+                    XL Large with Sauces
+                  </p>
+                  <div class="bg-Green py-2 px-4 rounded-md">
+                    <p class="font-bold text-sm text-white">£27.90</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- Cart section -->
+        <aside class="col-span-3"></aside>
+      </section>
     </main>
-    <!-- Offer Menu section -->
-    <section class="bg-OfferBg border-BorderColor/10 py-8">
-      <nav class="max-w-7xl mx-auto flex justify-around">
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Offer</a
-        >
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Burger</a
-        >
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Freis</a
-        >
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Snacks</a
-        >
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Salad</a
-        >
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-        >
-          Cold drinks
-        </a>
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Happy Meal®
-        </a>
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Desserts</a
-        >
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Hot drinks
-        </a>
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Sauces
-        </a>
-        <a
-          href="#"
-          class="text-xl font-bold hover:text-white hover:bg-black px-3 py-1 rounded-full"
-          >Orbit®</a
-        >
-      </nav>
-    </section>
+
     <!-- main-2 -->
     <main class="max-w-7xl mx-auto">
       <!-- Discount and offer section -->
@@ -425,542 +640,6 @@
         </div>
       </section>
 
-      <!-- Burger section -->
-      <section>
-        <div class="my-16"><h3 class="text-5xl font-bold">Burgers</h3></div>
-        <section class="grid grid-cols-12 gap-x-4 gap-y-8 my-16">
-          <!-- Type-1 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">
-                Royal Cheese Burger with extra Fries
-              </h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img
-                src="images/BurgerCategoryImage1.svg"
-                alt=""
-                class="w-full h-full"
-              />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-2 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img
-                src="images/BurgerCategoryImage2.svg"
-                alt=""
-                class="w-full h-full"
-              />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-3 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img
-                src="images/BurgerCategoryImage3.svg"
-                alt=""
-                class="w-full h-full"
-              />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-4 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img
-                src="images/BurgerCategoryImage4.svg"
-                alt=""
-                class="w-full h-full"
-              />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-5 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img
-                src="images/BurgerCategoryImage5.svg"
-                alt=""
-                class="w-full h-full"
-              />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-6 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img
-                src="images/BurgerCategoryImage6.svg"
-                alt=""
-                class="w-full h-full"
-              />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-        </section>
-      </section>
-      <!-- Fries section -->
-      <section>
-        <div class="my-16">
-          <h3 class="text-5xl font-bold text-Orange">Fries</h3>
-        </div>
-        <section class="grid grid-cols-12 gap-x-4 gap-y-8 my-16">
-          <!-- Type-1 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">
-                Royal Cheese Burger with extra Fries
-              </h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/Fries1.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-2 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/Fries2.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-3 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/Fries3.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-4 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/Fries4.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-5 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/Fries5.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-6 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/Fries6.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-        </section>
-      </section>
-
-      <!-- Cold Drinks section -->
-      <section>
-        <div class="my-16">
-          <h3 class="text-5xl font-bold text-Orange">Cold Drinks</h3>
-        </div>
-        <section class="grid grid-cols-12 gap-x-4 gap-y-8 my-16">
-          <!-- Type-1 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">
-                Royal Cheese Burger with extra Fries
-              </h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/ColdDrinks1.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-2 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/ColdDrinks2.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-3 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/ColdDrinks3.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-4 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/ColdDrinks4.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-5 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/ColdDrinks5.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-          <!-- Type-6 -->
-          <div
-            class="col-span-4 grid grid-cols-12 gap-2 p-6 border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
-          >
-            <div class="col-span-7 flex flex-col gap-5">
-              <h3 class="text-base font-semibold">The classics for 3</h3>
-              <p class="text-sm">
-                1 McChicken™, 1 Big Mac™, 1 <br />
-                Royal Cheeseburger, 3 medium <br />
-                sized French Fries , 3 cold drinks
-              </p>
-              <p class="font-bold text-sm">GBP 23.10</p>
-            </div>
-            <figure
-              class="col-span-5 relative flex items-center justify-center"
-            >
-              <img src="images/ColdDrinks6.svg" alt="" class="w-full h-full" />
-              <!-- plus -->
-              <div
-                class="bg-white opacity-90 rounded-tl-[45px] w-16 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-              >
-                <figure>
-                  <img src="images/Plus.svg" alt="" class="w-7 h-7" />
-                </figure>
-              </div>
-            </figure>
-          </div>
-        </section>
-      </section>
       <!-- Activities  section -->
       <section
         class="grid grid-cols-12 bg-BannerBg border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
@@ -1303,3 +982,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- https://www.figma.com/design/hqRbQdEnOC0yEGpTmaYVeA/Food-Delivery-Website-%26-App-Design-UI-Kit-(Community)?node-id=0-1&t=GaXXHdl9ZumC73Xo-0 -->

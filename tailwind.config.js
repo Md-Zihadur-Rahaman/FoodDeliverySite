@@ -10,7 +10,12 @@ module.exports = {
     extend: {
       colors: {
       BorderColor: '#000000',
+      BorderColorI: '#bcbcbc',
+      BorderColorII: '#cfcfcf',
+      BorderColorIII: '#8e8e8e',
       BannerBg: '#FBFBFB',
+      BannerBgI: '#f6f6f6',
+      BannerBgII: '#fDfDfD',
       Green: '#028643',
       Orange: '#FC8A06',
       lightBrown: '#f4b99f',
