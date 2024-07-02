@@ -29,6 +29,7 @@ module.exports = {
       PopCatBg: '#f5f5f5',
       BannerResBg: '#f4f4f4',
       OfferBg: '#f3f3f3',
+      CartBg: '#f9f9f9',
     },   
   },
   },

@@ -64,7 +64,7 @@
         <div
           class="col-span-4 flex flex-row items-center justify-center gap-3 py-6"
         >
-          <img src="images/Star.png" alt="" class="h-6 w-6" />
+          <img src="images/Star.jpg" alt="" class="h-6 w-6" />
           <p class="font-medium">
             Get 5% Off your first order,
             <span class="text-Orange font-bold underline">Promo: ORDER5</span>
@@ -540,106 +540,172 @@
           </div>
         </main>
         <!-- Cart section -->
-        <aside class="col-span-3"></aside>
+        <aside class="col-span-3 flex flex-col gap-3">
+          <!-- Open until 3:00 AM -->
+          <div
+            class="bg-Orange py-7 px-4 flex items-center justify-around rounded-lg"
+          >
+            <figure><img src="images/ClockWhite.svg" alt="" /></figure>
+            <p class="font-semibold text-white">Open until 3:00 AM</p>
+          </div>
+          <!-- Ordered item section -->
+          <div class="border-[1px] border-BorderColor/10 bg-CartBg rounded-xl">
+            <!-- basket part -->
+            <div
+              class="bg-Green rounded-tr-lg rounded-tl-lg flex flex-row justify-evenly items-center py-8"
+            >
+              <figure>
+                <img
+                  src="images/Full Shopping Basket.svg"
+                  alt=""
+                  class="w-12 h-12"
+                />
+              </figure>
+              <p class="font-semibold text-3xl text-white">My Basket</p>
+            </div>
+            <!-- items part -->
+            <!-- item-1 -->
+            <div
+              class="flex flex-row justify-between items-center gap-3 px-4 py-6 border-b-[1px] border-b-BorderColor/20"
+            >
+              <div>
+                <p
+                  class="font-bold text-white text-2xl p-4 bg-Orange rounded-full"
+                >
+                  1x
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <h1 class="font-semibold text-xl text-Green">£27.90</h1>
+                <h2 class="font-semibold">12” Vegitarian Pizza</h2>
+                <p class="text-sm">No Mushrooms + green peppers</p>
+              </div>
+              <figure><img src="images/Remove.svg" alt="" /></figure>
+            </div>
+            <!-- item-2 -->
+            <div
+              class="flex flex-row justify-between items-center gap-3 px-4 py-6 border-b-[1px] border-b-BorderColor/20"
+            >
+              <div>
+                <p
+                  class="font-bold text-white text-2xl p-4 bg-Orange rounded-full"
+                >
+                  1x
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <h1 class="font-semibold text-xl text-Green">£27.90</h1>
+                <h2 class="font-semibold">12” Vegitarian Pizza</h2>
+                <p class="text-sm">No Mushrooms + green peppers</p>
+              </div>
+              <figure><img src="images/Remove.svg" alt="" /></figure>
+            </div>
+            <!-- Total Price section -->
+            <div
+              class="flex flex-col gap-3 px-4 py-6 border-b-[1px] border-b-BorderColor/20"
+            >
+              <!-- Sub Total -->
+              <div class="flex flex-row justify-between">
+                <h1 class="font-semibold text-xl">Sub Total:</h1>
+                <p class="text-2xl">£127.90</p>
+              </div>
+              <!-- Discounts -->
+              <div class="flex flex-row justify-between">
+                <h1 class="font-semibold text-xl">Delivery Fee:</h1>
+                <p class="text-2xl">2.50</p>
+              </div>
+              <!-- Discounts -->
+              <div class="flex flex-row justify-between">
+                <h1 class="font-semibold text-xl">Discounts:</h1>
+                <p class="text-2xl">-3.00</p>
+              </div>
+            </div>
+            <!-- Grand Total Price -->
+            <div
+              class="flex flex-col gap-3 px-4 py-6 border-b-[1px] border-b-BorderColor/20"
+            >
+              <!-- Total to pay -->
+              <div
+                class="bg-Orange py-4 px-4 flex items-center justify-between rounded-lg"
+              >
+                <p class="font-semibold text-base text-white">Total to pay</p>
+                <p class="font-semibold text-3xl text-white">£127.90</p>
+              </div>
+              <!-- Choose your free item.. -->
+              <div
+                class="bg-border-[1px] bg-BannerBgI border-BorderColor flex flex-row gap-2 pl-6 pr-4 py-3 rounded-full"
+              >
+                <input
+                  type="text"
+                  class="outline-none bg-BannerBgI"
+                  placeholder="Choose your free item.."
+                />
+                <figure>
+                  <img src="images/RightDownArrow.svg" alt="" />
+                </figure>
+              </div>
+              <!-- Apply Coupon Code here -->
+              <div
+                class="bg-border-[1px] bg-BannerBgI border-BorderColor flex flex-row gap-2 pl-6 pr-4 py-3 rounded-full"
+              >
+                <input
+                  type="text"
+                  class="outline-none bg-BannerBgI"
+                  placeholder="Apply Coupon Code here"
+                />
+                <figure>
+                  <img src="images/RightArrowGreen.svg" alt="" />
+                </figure>
+              </div>
+            </div>
+            <!-- Delivery and Collection -->
+            <div class="flex flex-col gap-3 px-4 py-6">
+              <div class="flex flex-row items-center gap-2">
+                <!-- Delivery -->
+                <div
+                  class="flex flex-col items-center gap-1 p-4 bg-lightGradient1 border-[1px] border-BorderColor/20 rounded-xl"
+                >
+                  <figure>
+                    <img src="images/DeliveryScooter.svg" alt="" />
+                  </figure>
+                  <h1 class="font-semibold">Delivery</h1>
+                  <p class="text-sm">Starts at 17:50</p>
+                </div>
+                <figure><img src="images/BarI.svg" alt="" /></figure>
+                <!-- Collection -->
+                <div
+                  class="flex flex-col items-center gap-1 p-4 bg-lightGradient1 border-[1px] border-BorderColor/20 rounded-xl opacity-50"
+                >
+                  <figure>
+                    <img src="images/NewStore.svg" alt="" />
+                  </figure>
+                  <h1 class="font-semibold">Collection</h1>
+                  <p class="text-sm">Starts at 16:50</p>
+                </div>
+              </div>
+              <!-- Checkout! -->
+              <div
+                class="bg-Green rounded-lg flex flex-row gap-8 items-center px-5 py-2"
+              >
+                <figure>
+                  <img
+                    src="images/RightArrowWhite.svg"
+                    alt=""
+                    class="w-8 h-8"
+                  />
+                </figure>
+                <p class="font-semibold text-2xl text-white">Checkout!</p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </section>
     </main>
 
     <!-- main-2 -->
     <main class="max-w-7xl mx-auto">
-      <!-- Discount and offer section -->
-      <section class="grid grid-cols-12 gap-4 my-16">
-        <!-- First Order -->
-        <div class="col-span-4 flex flex-col gap-2 relative rounded-xl">
-          <figure class="">
-            <img src="images/FirstOrder.svg" alt="" />
-          </figure>
-          <div class="lg:absolute left-10 bottom-8">
-            <p class="text-Orange font-medium text-[13px] lg:text-base">
-              McDonald’s East London
-            </p>
-            <h3 class="text-black lg:text-white font-bold text-sm lg:text-xl">
-              First Order Discount
-            </h3>
-          </div>
-          <!-- discount -->
-          <div
-            class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
-          >
-            <p class="font-bold text-[12px] lg:text-xl text-white text-center">
-              -20%
-            </p>
-          </div>
-          <!-- plus -->
-          <div
-            class="bg-white opacity-90 rounded-tl-[45px] w-24 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-          >
-            <figure>
-              <img src="images/Plus.svg" alt="" class="w-10 h-10" />
-            </figure>
-          </div>
-        </div>
-        <!-- Vegan -->
-        <div class="col-span-4 flex flex-col gap-2 relative rounded-xl">
-          <figure class="">
-            <img src="images/Vegan.svg" alt="" />
-          </figure>
-          <div class="lg:absolute left-10 bottom-8">
-            <p class="text-Orange font-medium text-[13px] lg:text-base">
-              McDonald’s East London
-            </p>
-            <h3 class="text-black lg:text-white font-bold text-sm lg:text-xl">
-              Vegan Discount
-            </h3>
-          </div>
-          <!-- discount -->
-          <div
-            class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
-          >
-            <p class="font-bold text-[12px] lg:text-xl text-white text-center">
-              -20%
-            </p>
-          </div>
-          <!-- plus -->
-          <div
-            class="bg-white opacity-90 rounded-tl-[45px] w-24 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-          >
-            <figure>
-              <img src="images/Plus.svg" alt="" class="w-10 h-10" />
-            </figure>
-          </div>
-        </div>
-        <!-- Ice Cream -->
-        <div class="col-span-4 flex flex-col gap-2 relative rounded-xl">
-          <figure class="">
-            <img src="images/IceCream.svg" alt="" />
-          </figure>
-          <div class="lg:absolute left-10 bottom-8">
-            <p class="text-Orange font-medium text-[13px] lg:text-base">
-              McDonald’s East London
-            </p>
-            <h3 class="text-black lg:text-white font-bold text-sm lg:text-xl">
-              Free ice Cream Offer
-            </h3>
-          </div>
-          <!-- discount -->
-          <div
-            class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
-          >
-            <p class="font-bold text-[12px] lg:text-xl text-white text-center">
-              -100%
-            </p>
-          </div>
-          <!-- plus -->
-          <div
-            class="bg-white opacity-90 rounded-tl-[45px] w-24 p-4 absolute bottom-0 right-0 flex justify-center items-center"
-          >
-            <figure>
-              <img src="images/Plus.svg" alt="" class="w-10 h-10" />
-            </figure>
-          </div>
-        </div>
-      </section>
-
       <!-- Activities  section -->
       <section
         class="grid grid-cols-12 bg-BannerBg border-[1px] border-BorderColor/10 rounded-xl shadow-xl shadow-BorderColor/25"
