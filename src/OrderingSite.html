@@ -163,20 +163,30 @@
     <main class="max-w-7xl mx-auto">
       <!-- banner section  -->
       <section
-        class="h-[400px] rounded-xl bg-no-repeat bg-cover bg-center relative"
+        class="h-[400px] rounded-xl bg-no-repeat bg-cover bg-center relative m-4 lg:m-0"
         style="background-image: url(images/BannerImageBurger.svg)"
       >
+        <!-- opacity section -->
         <div
           class="absolute bg-BannerResBg/90 inset-x-0 inset-y-0 z-10 rounded-xl"
         ></div>
-        <div class="absolute inset-x-0 inset-y-0 grid grid-cols-12 gap-4 z-20">
+        <!-- main content section -->
+        <div
+          class="absolute inset-x-0 inset-y-1 lg:inset-y-0 flex flex-col-reverse lg:grid lg:grid-cols-12 gap-4 z-20"
+        >
           <!-- left section -->
-          <div class="col-span-6 flex flex-col justify-center gap-5 px-10">
-            <p class="text-xl">
+          <div
+            class="col-span-6 flex flex-col justify-center gap-5 lg:px-10 px-0 y-6 lg:py-0"
+          >
+            <p class="text-[13px] text-center lg:text-left lg:text-xl">
               Desi Flavours with a blend of Italian aesthetics!
             </p>
-            <h1 class="text-5xl font-semibold">Tandoori Pizza London</h1>
-            <div class="flex flex-row gap-3">
+            <h1
+              class="text-2xl lg:text-5xl text-center lg:text-left font-bold lg:font-semibold"
+            >
+              Tandoori Pizza London
+            </h1>
+            <div class="flex flex-col lg:flex-row gap-3">
               <div
                 class="bg-black rounded-full flex flex-row justify-center items-center gap-2 p-2"
               >
@@ -193,26 +203,44 @@
               </div>
             </div>
           </div>
+          <!-- Open until 3:00 AM -->
+          <div
+            class="lg:hidden w-10/12 flex flex-row gap-2 bg-Orange rounded-r-xl py-2 px-6"
+          >
+            <figure><img src="images/ClockIcon.svg" alt="" /></figure>
+            <p class="font-semibold text-base text-white">Open until 3:00 AM</p>
+          </div>
           <!-- right section -->
-          <div class="col-span-6 flex justify-center items-center relative">
+          <div
+            class="col-span-6 flex justify-center items-center relative p-4 lg:p-0"
+          >
             <figure class="rounded-xl px-16 pt-10 relative">
-              <img src="images/BannerImageOrder.svg" alt="" />
-              <figure class="absolute bottom-0 -left-2">
-                <img src="images/Reviews.svg" alt="" />
+              <img src="images/BannerImageOrder.svg" alt="" class="" />
+              <figure class="absolute bottom-0 left-1 lg:-left-2">
+                <img
+                  src="images/Reviews.svg"
+                  alt=""
+                  class="w-14 h-14 lg:w-full lg:h-full"
+                />
               </figure>
             </figure>
           </div>
         </div>
+        <!-- Open until 3:00 AM -->
         <div
-          class="flex flex-row gap-2 bg-Orange rounded-r-xl py-2 px-6 absolute left-0 -bottom-4 z-30"
+          class="hidden lg:flex flex-row gap-2 bg-Orange rounded-r-xl py-2 px-6 absolute left-0 -bottom-4 z-30"
         >
           <figure><img src="images/ClockIcon.svg" alt="" /></figure>
           <p class="font-semibold text-base text-white">Open until 3:00 AM</p>
         </div>
       </section>
       <!-- Order from Tandoori Pizza London  -->
-      <section class="max-w-6xl mx-auto flex flex-row justify-between my-14">
-        <h1 class="font-bold text-3xl">Order from Tandoori Pizza London</h1>
+      <section
+        class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row gap-4 lg:gap-0 items-center lg:items-start lg:justify-between m-4 lg:mx-0 lg:my-14"
+      >
+        <h1 class="font-semibold lg:font-bold text-base lg:text-3xl">
+          Order from Tandoori Pizza London
+        </h1>
         <div
           class="border-[1px] border-black flex flex-row gap-2 px-4 py-2 rounded-full"
         >
@@ -225,70 +253,87 @@
         </div>
       </section>
       <!-- Menu Item and Cart section -->
-      <section class="grid grid-cols-12 gap-3 my-20">
+      <section
+        class="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-3 m-4 lg:mx-0 lg:my-20"
+      >
         <!-- menu section -->
-        <aside class="col-span-3">
+        <aside class="col-span-full lg:col-span-3">
           <!-- menuType section -->
           <div
-            class="bg-BannerBg border-[1px] border-BorderColorI py-8 rounded-xl flex flex-col gap-4 my-6"
+            class="bg-BannerBg border-[1px] border-BorderColorI p-6 lg:px-0 lg:py-8 rounded-xl flex flex-row lg:flex-col justify-between lg:justify-normal items-center lg:items-start gap-4 my-6"
           >
-            <div class="flex flex-row items-center gap-4 pl-6">
-              <figure><img src="images/RestaurantMenu.svg" alt="" /></figure>
-              <p class="font-semibold text-3xl">Menu</p>
+            <div
+              class="flex flex-row justify-center items-center gap-1 lg:gap-4 pl-0 lg:pl-6"
+            >
+              <figure>
+                <img
+                  src="images/RestaurantMenu.svg"
+                  alt=""
+                  class="w-10 h-10 lg:w-full lg:h-full"
+                />
+              </figure>
+              <p class="font-semibold text-xl lg:text-3xl">Menu</p>
+            </div>
+            <!-- for mobile menu -->
+            <div class="flex justify-between gap-8 items-center lg:hidden">
+              <a href="#" class=" ">Pizzas</a>
+              <figure>
+                <img src="images/RightDownArrow.svg" alt="" />
+              </figure>
             </div>
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Pizzas</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Garlic Bread</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Calzone</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Kebabas</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Salads</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Cold drinks</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Happy Meal®</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Desserts</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Hot drinks</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Sauces</a
             >
             <a
               href="#"
-              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6"
+              class="hover:bg-black hover:text-white text-xl font-bold py-3 pl-6 hidden lg:block"
               >Orbit®</a
             >
           </div>
